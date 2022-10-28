@@ -34,6 +34,7 @@ body {
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
@@ -47,3 +48,59 @@ table {
 	border-spacing: 0;
 }
 /* --------------CODE WRITTEN------------- */
+body{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.TheHeader h1 {
+	font-size: 10em;
+	color: white;
+	text-align: center;
+	background-image: url(../images/apple-pie.jpg);
+	background-position: 0 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 950px;
+	padding-top: 600px;
+	position: relative;
+}
+.Paragraph {
+font-size: 4em;
+font-weight: lighter;
+padding: 100px 200px;
+line-height: 1.2;
+}
+.ImageOne {
+	height: 150px;
+	padding: 60px 750px 0;
+}
+hr {
+	margin: 2% 12% 2% 8%;
+	height: 4px;
+	background-color: grey;
+}
+.ImageTwo {
+	height: 150px;
+	padding: 60px 900px 0;
+}
+h2 {
+	font-size: 4em;
+	padding: 0 200px;
+}
+ol {
+	font-size: 3em;
+	padding: 50px 230px;
+	font-weight: lighter;
+	line-height: 1.3;
+}
+#ListOne li::before{
+	content:'- ';
+}
+#ListTwo {
+	margin-bottom: 150px;
+	}
+#ListTwo li{
+	counter-increment: ordered-list-item;
+}
+#ListTwo li::before{
+	content: counter(ordered-list-item)') ';
+}
